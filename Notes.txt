@@ -1,0 +1,7 @@
+Day-01
+
+You now understand the two most important agent concepts:
+✅ Tool descriptions drive Claude's decisions — not your code
+✅ The agent loop — Claude runs until end_turn, calling tools as needed
+✅ Parallel tool calls — Claude optimises automatically when tools are independent
+
