@@ -1,7 +1,22 @@
 Day-01
-
 You now understand the two most important agent concepts:
 ✅ Tool descriptions drive Claude's decisions — not your code
 ✅ The agent loop — Claude runs until end_turn, calling tools as needed
 ✅ Parallel tool calls — Claude optimises automatically when tools are independent
+
+Day-02 : strategies + token-aware smart agent
+
+Que: What happens when the messages list grows huge after 50 turns?
+Ans:
+1. Summarisation — periodically compress old messages into a short summary, replace them with that summary, keep going
+2. Sliding window — keep only the last N messages, drop the oldest
+3. Scratchpad — give Claude a dedicated thinking space inside tool results so it doesn't need to re-read the entire history.
+
+Learned:
+
+Sliding window — fast, loses old context, right for short tasks
+Summarisation — preserves meaning, costs one extra API call, right for long sessions
+Scratchpad — Claude thinks before acting, reduces errors in complex tasks
+Token counting — check before every API call, trigger summarisation automatically
+The tool_use / tool_result pairing rule — every tool call needs a result before next API call
 
