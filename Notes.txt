@@ -20,3 +20,30 @@ Scratchpad — Claude thinks before acting, reduces errors in complex tasks
 Token counting — check before every API call, trigger summarisation automatically
 The tool_use / tool_result pairing rule — every tool call needs a result before next API call
 
+Day-03
+One agent, all tools → faster, cheaper, gets confused on complex tasks
+Coordinator + subagents → slower, costs more, handles complex tasks reliably
+
+
+        USER
+         |
+         | gives task
+         ↓
+COORDINATOR AGENT (Claude)
+  |         |          |
+  |         |          |
+  ↓         ↓          ↓
+Search    Calculator  Writer
+Agent     Agent       Agent
+(Claude)  (Claude)    (Claude)
+  |         |          |
+  |         |          |
+  ↓         ↓          ↓
+Web API   eval()    Formats
+                    report
+  |         |          |
+  └─────────┴──────────┘
+            |
+            ↓
+        Final answer
+          to USER
