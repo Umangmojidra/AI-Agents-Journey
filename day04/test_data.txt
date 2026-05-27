@@ -1,0 +1,7 @@
+
+Name: Umang Mojidra
+Role: AI Engineer
+Location: Hyderabad
+Skills: Python, Flask, RAG Pipelines, Claude API, Scikit-learn
+Current Project: AI Agents Journey — building production-grade agentic systems
+Target: ML Engineer / GenAI Engineer role at 10 LPA

@@ -20,7 +20,7 @@ Scratchpad — Claude thinks before acting, reduces errors in complex tasks
 Token counting — check before every API call, trigger summarisation automatically
 The tool_use / tool_result pairing rule — every tool call needs a result before next API call
 
-Day-03
+Day-03 
 One agent, all tools → faster, cheaper, gets confused on complex tasks
 Coordinator + subagents → slower, costs more, handles complex tasks reliably
 
@@ -47,3 +47,8 @@ Web API   eval()    Formats
             ↓
         Final answer
           to USER
+
+Day - 04 
+MCP is a protocol. Not a library, not a framework — a protocol.
+Like HTTP is a protocol for web requests, MCP is a protocol for connecting AI agents to external tools. 
+It defines exactly how a client (your agent) talks to a server (the tool provider) so both sides know what to expect.
